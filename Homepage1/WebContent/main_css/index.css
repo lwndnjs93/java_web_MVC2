@@ -1,0 +1,368 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	border: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#wrap {
+	overflow: visible;
+	width: 1180px;
+	height: auto;
+	margin: 0 auto;
+	clear: ;
+	float: none;
+}
+
+#ndcm_top {
+	overflow: visible;
+	width: 1180px;
+	height: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+}
+
+#ndcm_con_a {
+	overflow: visible;
+	width: 1180px;
+	height: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 170px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+}
+
+#ndcm_con_b {
+	overflow: visible;
+	width: 1180px;
+	height: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+}
+
+#ndcm_con_c {
+	overflow: visible;
+	width: 1180px;
+	height: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+}
+
+#ndcm_foot {
+	overflow: visible;
+	width: 1180px;
+	height: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+}
+
+.dgc_topMenu_1_01 {
+	width: 1180px;
+	height: 20px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 1180px;
+	min-height: 20px;
+	text-align: left;
+}
+
+.banner1 {
+	width: 300px;
+	height: 270px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 440px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 300px;
+	min-height: 270px;
+	text-align: left;
+}
+
+.dgc_textnavi1 {
+	width: 1180px;
+	height: 60px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 1180px;
+	min-height: 60px;
+	text-align: left;
+}
+
+.dgc_rolloverbanner_1_01 {
+	width: 294px;
+	height: 294px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 294px;
+	min-height: 294px;
+	text-align: left;
+}
+
+.dgc_rolloverbanner_1_02 {
+	width: 294px;
+	height: 294px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 294px;
+	min-height: 294px;
+	text-align: left;
+}
+
+.dgc_rolloverbanner_1_03 {
+	width: 294px;
+	height: 294px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 294px;
+	min-height: 294px;
+	text-align: left;
+}
+
+.dgc_rolloverbanner_1_04 {
+	width: 294px;
+	height: 294px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 294px;
+	min-height: 294px;
+	text-align: left;
+}
+
+.dgc_rolloverbanner_1_05 {
+	width: 294px;
+	height: 294px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 294px;
+	min-height: 294px;
+	text-align: left;
+}
+
+.dgc_rolloverbanner_1_06 {
+	width: 294px;
+	height: 294px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 294px;
+	min-height: 294px;
+	text-align: left;
+}
+
+.dgc_rolloverbanner_1_07 {
+	width: 294px;
+	height: 294px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 294px;
+	min-height: 294px;
+	text-align: left;
+}
+
+.dgc_rolloverbanner_1_08 {
+	width: 294px;
+	height: 294px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 294px;
+	min-height: 294px;
+	text-align: left;
+}
+
+.banner2 {
+	width: 300px;
+	height: 176px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 440px;
+	clear: ;
+	float: left;
+	overflow: visible;
+	min-width: 300px;
+	min-height: 176px;
+	text-align: left;
+}
+
+.web_copyright_01 {
+	width: 1080px;
+	height: 80px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+	overflow: hidden;
+	min-width: 1080px;
+	min-height: 80px;
+	text-align: left;
+}
+
+.dgc_default1 {
+	width: 100px;
+	height: 80px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	clear: ;
+	float: left;
+	overflow: hidden;
+	min-width: 100px;
+	min-height: 80px;
+	text-align: left;
+}
+

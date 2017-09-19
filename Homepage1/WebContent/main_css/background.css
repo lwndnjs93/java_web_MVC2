@@ -1,0 +1,175 @@
+body.user {
+	font-size: ;
+	font-family: ;
+	color: ;
+	-webkit-text-size-adjust: none;
+	word-wrap: break-word;
+	word-break: break-all;
+	background-color: ;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+}
+
+#ndcm_top {
+	background-color: ;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+}
+
+#wrap {
+	background-color: ;
+	background-image: url();
+	background-repeat: repeat;
+	background-position: top left;
+}
+
+#ndcm_foot a:link {
+	color: ;
+}
+
+#ndcm_foot a:visited {
+	color: ;
+}
+
+#ndcm_foot a:hover {
+	color: ;
+}
+
+#ndcm_foot a:active {
+	color: ;
+}
+
+#ndcm_con_b a:link {
+	color: #ffffff;
+}
+
+#ndcm_con_b a:visited {
+	color: #ffffff;
+}
+
+#ndcm_con_b a:hover {
+	color: #ffffff;
+}
+
+#ndcm_con_b a:active {
+	color: #ffffff;
+}
+
+#ndcm_con_a {
+	font-family: ;
+	font-size: ;
+	color: ;
+	background-color: ;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+}
+
+#ndcm_con_a a:link {
+	color: ;
+}
+
+#ndcm_con_a a:visited {
+	color: ;
+}
+
+#ndcm_con_a a:hover {
+	color: ;
+}
+
+#ndcm_con_a a:active {
+	color: ;
+}
+
+#ndcm_foot {
+	background-color: ;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+	font-family: ;
+	font-size: ;
+	color: ;
+}
+
+body.user a:link {
+	color: ;
+}
+
+body.user a:visited {
+	color: ;
+}
+
+body.user a:hover {
+	color: ;
+}
+
+body.user a:active {
+	color: ;
+}
+
+#ndcm_main a:link {
+	color: ;
+}
+
+#ndcm_main a:visited {
+	color: ;
+}
+
+#ndcm_main a:hover {
+	color: ;
+}
+
+#ndcm_main a:active {
+	color: ;
+}
+
+#body {
+	position: absolute;
+	z-index: -999;
+	width: 100%;
+	height: 100%;
+	min-height: 1394px;
+	background-color: ;
+	background-repeat: no-repeat;
+	background-position: top center;
+	left: 0;
+}
+
+#body2 {
+	position: absolute;
+	z-index: -999;
+	width: 100%;
+	height: 100%;
+	min-height: 1394px;
+	background-color: ;
+	background-repeat: no-repeat;
+	background-position: top center;
+	left: 0;
+}
+
+#body.bodybackground1 {
+	background-image: url(../Image/cccabaf6b9b031c20f8f10134d1e6edf.jpg);
+}
+
+#body2.bodybackground1 {
+	background-image: url(../Image/cccabaf6b9b031c20f8f10134d1e6edf.jpg);
+}
+
+#body.bodybackground2 {
+	background-image: url(../Image/dc9c9a61c8e2d7a79ee77b56a7c58e2b.jpg);
+}
+
+#body2.bodybackground2 {
+	background-image: url(../Image/dc9c9a61c8e2d7a79ee77b56a7c58e2b.jpg);
+}
+
+#body.bodybackground3 {
+	background-image: url(../Image/fc1106aa709c1e29a97bc1a48f6ed015.jpg);
+}
+
+#body2.bodybackground3 {
+	background-image: url(../Image/fc1106aa709c1e29a97bc1a48f6ed015.jpg);
+}
+

@@ -1,0 +1,464 @@
+@charset "utf-8";
+
+/********************************************* global *********************************************/
+
+/* 공통 스타일 */
+form {padding:0; margin:0;}
+img {border:none;}
+
+/* 숨김 콘텐츠 */
+.blind {
+	position:absolute;
+	left:-1000em;
+	font-size:0.75em;
+	line-height:0;
+	height:0;
+	display:none;
+}
+
+/*전체 태그에 대하여 마진, 패딩 서체크기, 서체종류 초기화*/
+
+* {
+	margin:0; 
+	padding:0; 
+}
+
+/*페이지 여백 초기화*/
+body {font:12px dotum, "돋움", gulim, "굴림", sans-serif; color:#595757;}
+
+
+a:link {text-decoration:none; color:#020202;}			/*기본 링크 초기화*/
+a:visited {text-decoration:none; color:#020202;}		/*방문한 링크 초기화*/
+a:hover, a:active, a:focus {text-decoration:none; color:#020202;}			/*활성 링크 초기화*/
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal;}		/*제목요소 초기화*/
+fieldset, img, abbr, acronym {border:0 none;}		/*테두리 없애기 초기화*/
+ol, ul, li {list-style:none;}		/*목록 뷸릿 없애기 초기화*/
+
+/*테이블 보더 초기화 (마크업에 cellspacing="0" 지정 함께 필요)*/
+table {
+	border-collapse:collapse; /* collapse */
+	border-spacing:0;
+	border:0;
+}
+caption, th, td {font-weight:normal;}		/*테이블 왼쪽정렬 및 서체굵기 초기화*/
+address, caption, em {text-align:left; font-weight:normal;}		/*텍스트 관련 요소 초기화*/
+
+
+/* *********************************************************************************************************************************** */
+
+/***************** 공통버튼 ********************/
+/* Button Reset */
+#dgcWrap .button,
+#dgcWrap .button a,
+#dgcWrap .button button,
+#dgcWrap .button input { position:relative; margin:0; display:-moz-inline-stack; display:inline-block; text-decoration:none !important; border:0; font-size:12px; font-family:Tahoma, Sans-serif; white-space:nowrap; background:url(../Image/buttonWhite.gif) no-repeat; overflow:visible; color:#333;}
+#dgcWrap .button { height:23px; padding:0; vertical-align:middle; margin-right:2px; background-position:left top;}
+#dgcWrap .button a,
+#dgcWrap .button button,
+#dgcWrap .button input{ left:2px; vertical-align:top; cursor:pointer;}
+
+/* Button Size */
+#dgcWrap .button.large { height:29px; background-position:left -30px; }
+#dgcWrap .button.xLarge { height:35px; background-position:left -65px; }
+#dgcWrap .button.small { height:18px; background-position:left -107px; }
+#dgcWrap .button a,
+#dgcWrap .button button,
+#dgcWrap .button input { height:23px; padding:0 10px 0 8px; font-size:12px; line-height:23px; background-position:right top;}
+#dgcWrap .button.large a,
+#dgcWrap .button.large button,
+#dgcWrap .button.large input { height:30px; padding:0 10px 0 8px; font-size:16px; line-height:29px; background-position:right -30px;}
+#dgcWrap .button.xLarge a,
+#dgcWrap .button.xLarge button,
+#dgcWrap .button.xLarge input { height:35px; padding:0 10px 0 8px; font-size:20px; line-height:35px; background-position:right -65px;}
+#dgcWrap .button.small a,
+#dgcWrap .button.small button,
+#dgcWrap .button.small input { height:18px; padding:0 6px 0 4px; font-size:11px; line-height:18px; background-position:right -107px;}
+
+/* Button Text Color */
+#dgcWrap .button *:hover,
+#dgcWrap .button *:active,
+#dgcWrap .button *:focus{ color:#690;}
+#dgcWrap .button.green,
+#dgcWrap .button.green a,
+#dgcWrap .button.green button,
+#dgcWrap .button.green input { background-image:url(../Image/buttonGreen.gif); color:#fff;}
+#dgcWrap .button.green *:hover,
+#dgcWrap .button.green *:active,
+#dgcWrap .button.green *:focus{ color:#ff0;}
+#dgcWrap .button.black,
+#dgcWrap .button.black a,
+#dgcWrap .button.black button,
+#dgcWrap .button.black input { background-image:url(../Image/buttonBlack.gif); color:#fff;}
+#dgcWrap .button.black *:hover,
+#dgcWrap .button.black *:active,
+#dgcWrap .button.black *:focus{ color:#ff0;}
+#dgcWrap .button.red,
+#dgcWrap .button.red a,
+#dgcWrap .button.red button,
+#dgcWrap .button.red input { background-image:url(../Image/buttonRed.gif); color:#fff;}
+#dgcWrap .button.red *:hover,
+#dgcWrap .button.red *:active,
+#dgcWrap .button.red *:focus{ color:#ff0;}
+#dgcWrap .button.blue,
+#dgcWrap .button.blue a,
+#dgcWrap .button.blue button,
+#dgcWrap .button.blue input { background-image:url(../Image/buttonBlue.gif); color:#fff;}
+#dgcWrap .button.blue *:hover,
+#dgcWrap .button.blue *:active,
+#dgcWrap .button.blue *:focus{ color:#ff0;}
+#dgcWrap .button.white,
+#dgcWrap .button.white a,
+#dgcWrap .button.white button,
+#dgcWrap .button.white input { background-image:url(../Image/buttonWhite.gif); color:#333;}
+#dgcWrap .button.white *:hover,
+#dgcWrap .button.white *:active,
+#dgcWrap .button.white *:focus{ color:#333;}
+
+/* Button Text Strong */
+#dgcWrap .button.strong * { font-weight:bold !important;}
+
+
+/***************** 공통버튼 ********************/
+
+
+
+
+/***************** common ********************/
+#dgcWrap_power {float:left; margin:0 0 0 25px; width:720px; *zoom:1;}
+#dgcWrap_power:after { display: block; clear: both; content: "";}
+
+#dgcWrap {width:98%;float:left; margin:10px 0 0 10px;}
+.bold1 {font-weight:bold; color:#626262; line-height:20px;}
+.bold2 {font-size:18px; font-weight:bold; color:#000; line-height:20px;}
+.week tr th {border-top:2px solid #e4e4e4;}
+.bold_red {color:red; font-weight:bold;}
+.bold_blue {color:blue; font-weight:bold;}
+.bold_blue2 {color:#515e66; font-weight:bold; vertical-align:middle;}
+.red {color:red;}
+.txt_right {text-align:right;}
+.title {margin:10px 0; text-align:left; font-family:  "굴림", Gulim, "돋움", Dotum; font-size:13px; font-weight:bold; color:#4d4d4d;} /* 제목 */
+.title img {vertical-align:middle; margin-right:3px;}
+
+.back_bg {background:#f2f2f2;}
+.back_bg2 {background:#f7f7f7; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; border-right:1px solid #e0e0e0;}
+.back_bg3 {background:#f7f7f7; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0;}
+
+input {vertical-align:middle; background-color:#fff;  font-family:Malgun Gothic, dotum; font-size:12px; height:18px; padding-left:0px;}
+.pension_input input {border:1px solid #dadada;}
+.pension_input .input80 {width:80px;}
+.pension_input .input220 {width:220px;}
+select {vertical-align:middle; font-family:Malgun Gothic, dotum, tahoma, Georgia; color:#666666; font-size:11px; border:1px #cccccc solid;}
+
+
+/* navi */
+#dgcWrap .nav_on {margin-bottom:15px; position:relative; width:100%; min-height:40px; letter-spacing:-1px;}
+#dgcWrap .nav_area {border-bottom:1px solid #383838; float:left; width:100%; margin:5px 0px;}
+#dgcWrap .nav_on .tab_01 {float:left; margin-right:3px; }
+#dgcWrap .nav_on .tab_01 a {display:block; padding:0 8px; color:#fff !important; line-height:30px; text-align:center; background:#6e6d6d; 
+	border:1px solid #383838; border-bottom:0;
+	}
+#dgcWrap .nav_on .tab_01 a:hover {color:#faf2bd !important;}
+
+/* navi on*/
+#dgcWrap .nav_on .over a {color:#444 !important; background:#eee;}
+#dgcWrap .nav_on .over a:hover {color:#444 !important;}
+/* navi on*/
+
+ .nav_on .tab_02 {background:#6e6d6d; height:30px; line-height:30px; padding:0; float:right; text-align:center;
+									border-top:1px solid #383838; border-left:1px solid #383838; border-right:1px solid #383838;}
+#dgcWrap .nav_on .tab_02 a {color:#fff; font-weight:bold; padding:0 8px 0 9px;}
+#dgcWrap .nav_on .tab_02 a:hover, #dgcWrap .nav_on .tab_02 a:active, #dgcWrap .nav_on .tab_02 a:focus {color:#faf2bd; padding:0 8px 0 9px;}
+
+/* navi2 */
+#dgcWrap .nav_on2 { margin-bottom:15px; position:relative; width:100%; min-height:40px;}
+#dgcWrap .nav_area2 {border-bottom:1px solid #383838; float:left; width:100%;}
+#dgcWrap .nav_on2 .tab_01 {background:#848484; height:20px; line-height:20px; padding:0 10px; float:left; text-align:center; margin-right:3px;
+									   border-top:1px solid #383838; border-left:1px solid #383838; border-right:1px solid #383838;}
+#dgcWrap .nav_on2 .tab_01 #infoTab_1,
+#dgcWrap .nav_on2 .tab_01 #infoTab_2,
+#dgcWrap .nav_on2 .tab_01 #infoTab_3 {padding:0 10px; color:#fff; font-weight:bold;}
+#dgcWrap .nav_on2 .tab_01 .information_01 text_box, 
+#dgcWrap .nav_on2 .tab_01 .information_02 text_box, 
+#dgcWrap .nav_on2 .tab_01 .information_03 text_box {color:#faf2bd; padding:0 10px;}
+
+/***************** common ********************/
+
+
+
+
+
+
+/**************** admin srart *******************/
+/* list */
+#dgcWrap .textBox {background:#f2f2f2; border:1px solid #d3d3d3; padding:15px 10px;}
+#dgcWrap .textBox li {font-weight:bold; padding:5px 0;}
+#dgcWrap .box {width:100%;}
+#dgcWrap .box th {border:1px solid #e0e0e0; background:url('../images/bar_bg.gif') repeat-x left top; font-weight:bold; padding:7px 0; text-align:center;}
+#dgcWrap .box td {text-align:center; border:1px solid #e0e0e0; padding:5px 0;}
+#dgcWrap .box td.delete_bt {text-align:left; padding:5px;}
+#dgcWrap .number {text-align:center; margin:30px 0;}
+#dgcWrap .number li {display:inline; margin:0 2px;}
+
+
+
+/*more*/
+#dgcWrap .search {text-align:center; margin-bottom:20px;}
+#dgcWrap .search li {display:inline;}
+#dgcWrap .search li select {width:13%;}
+#dgcWrap .more {width:100%; margin-top:20px;  border:1px solid #dedede;}
+#dgcWrap .more td {padding:5px 3px; line-height:20px;}
+#dgcWrap .more .heightBox {text-align:right; padding:15px 3px; font-size:14px; border-bottom:1px dashed #e0e0e0; border-top:1px dashed #e0e0e0;}
+#dgcWrap .margin_top {margin-top:20px;}
+#dgcWrap textarea {padding:3px; font-family:Malgun Gothic, dotum, tahoma, Georgia; color:#666666; font-size:11px; border:1px solid #dadada; line-height:16px; height:40px; width:95%;}
+
+
+
+
+/* period */
+#dgcWrap .tableBox01 {width:100%;}
+#dgcWrap .tableBox01 th {padding:8px 0; border:1px solid #e0e0e0; font-weight:bold; background:url('../images/bar_bg02.gif') repeat-x left top;
+									 text-align:center;}
+#dgcWrap .tableBox01 td {padding:5px 3px; border:1px solid #e0e0e0; text-align:center;}
+#dgcWrap .tableBox01 .inputBox td input {width:85%;}
+
+/**/
+#dgcWrap .tableBox02 {width:100%; margin:0; padding:0; border-top:1px solid #e0e0e0; border-left:1px solid #e0e0e0;}
+#dgcWrap .tableBox02 th {text-align:center; vertical-align:top; border-right:1px solid #e0e0e0; border-bottom:2px solid #e0e0e0;}
+#dgcWrap .tableBox02 th table {width:100%; margin:0; padding:0;}
+#dgcWrap .tableBox02 th table td {padding:5px;}
+#dgcWrap .tableBox02 th table td.room_title {font-weight:bold; background:url('../images/bar_bg02.gif') repeat-x left top;}
+#dgcWrap .tableBox02 th table td.room_name {border-bottom:1px solid #e0e0e0; font-weight:bold;
+																  background:url('../images/bar_bg02.gif') repeat-x left top;}
+#dgcWrap .tableBox02 .inputBox td input {width:94%;}
+.room_space {height:15px; margin-top:15px; border-top:1px dotted #b9b9b9;}
+/**/
+
+#dgcWrap .writeBox01 {width:100%; margin-top:30px;}
+#dgcWrap .writeBox01 th {padding:8px 0; border:1px solid #e0e0e0; font-weight:bold; background:url('../images/bar_bg02.gif') repeat-x left top;
+									 text-align:center;}
+#dgcWrap .writeBox01 td {padding:5px 3px; border:1px solid #e0e0e0; text-align:center;}
+#dgcWrap .writeBox01 .inputTxt {width:80%;}
+#dgcWrap .writeBox01 .borderNone {border:none; text-align:right;}
+
+
+
+
+/* room */
+#dgcWrap .room {margin-top:30px;}
+#dgcWrap .room .borderNone {border:none; text-align:right;}
+
+
+
+
+/* option */
+#dgcWrap .optionPlus {margin-top:30px;}
+#dgcWrap .optionPlus .input_02 input {width:90%;}
+
+
+
+/* deposit */
+#dgcWrap .accountPlus {margin-top:30px;}
+#dgcWrap .accountPlus .input_02 input {width:90%;}
+
+
+
+/* price */
+#dgcWrap .pricePlus {margin-top:30px;}
+#dgcWrap .pricePlus .borderNone {border:none; text-align:right;}
+
+
+/* reservations register*/
+#dgcWrap .register {width:100%; background:#fff;}
+#dgcWrap .register th {padding:7px 0; border:1px solid #e0e0e0; font-weight:bold;  background:#ededed; }
+#dgcWrap .register td {padding:6px 3px; border:1px solid #e0e0e0; text-align:center;}
+#dgcWrap .register td a:hover {text-decoration:underline;}
+
+
+/* cancel */
+#dgcWrap .passwordBox {width:50%; margin:0 auto; height:200px; border:1px solid #ccc; background:#fff;}
+#dgcWrap .passwordBox .backBg {font-size:14px; font-weight:bold; line-height:30px; background:#ccc; color:#444; text-align:center;}
+#dgcWrap .passwordBox td {text-align:center;}
+#dgcWrap .passwordBox .passwordBtn li {display:inline;}
+#dgcWrap .passwordBox .pwBox {width:100%; height:120px; padding:5px; margin-top:6px;}
+#dgcWrap .passwordBox .inputTxt {width:70%;}
+
+/**************** admin end *******************/
+
+
+
+/****************** ui srart ********************/
+/* celendar */
+#dgcWrap { position:relative; padding-bottom:20px;}
+#dgcWrap .booking li {float:left; letter-spacing:-1px;}
+#dgcWrap .booking li span {padding-left:1px;}
+#dgcWrap .booking .padding_right {padding-right:8px;}
+#dgcWrap .booking .padding_right img {vertical-align:middle;}
+#dgcWrap .booking .float_right {float:right;} /* button */
+#dgcWrap .ymd {text-align:center; margin:0; padding:15px 0 10px 0; clear:both;}
+#dgcWrap .ymd dd {font-size:16px;}
+#dgcWrap .today {text-align:right; color:#8a8a8a; padding-bottom:5px;}
+#dgcWrap .booking_table {width:100%; table-layout:fixed; border-bottom:1px solid #cdcdcd; background:#fff;} /*table*/
+#dgcWrap .booking_table th {padding:8px 0; background:url('../images/clendar_bg.gif') repeat-x top left;}
+#dgcWrap .booking_table td {border:1px solid #cdcdcd; height:80px; letter-spacing:-1px;}
+#dgcWrap .booking_table td a:hover {text-decoration:underline;}
+#dgcWrap .booking_table img {margin-left:0px; vertical-align:middle;}
+#dgcWrap .booking_table .bold_top {vertical-align:top; padding:0; line-height:18px;}
+#dgcWrap .booking_table .bold_top li {text-align:left; line-height:18px;}
+#dgcWrap .booking_table .boldRed_top {vertical-align:top; color:red; padding:0; line-height:18px;}
+#dgcWrap .booking_table .boldRed_top ul li {text-align:left; line-height:18px;}
+#dgcWrap .booking_table .boldRed_top a {color:red;}
+#dgcWrap .booking_table .boldRed_top a:visited {}
+#dgcWrap .booking_table .boldBlue_top {vertical-align:top; color:blue; padding:0; line-height:18px;}
+#dgcWrap .booking_table .boldBlue_top li {text-align:left; line-height:18px;}
+#dgcWrap .booking_table .boldBlue_top a {color:blue;}
+#dgcWrap .padding-top {padding-top:10px;}
+#dgcWrap .padding-top img {vertical-align:middle;}
+
+/* calendar */
+.calendar_area {width:96px; padding:4px 2px 4px 2px;
+						font-family:"돋움", dotum, "굴림", gulim, arial; font-size:11px; letter-spacing:-1px;}
+
+.calendar_div1 {width:96px;}
+
+.calendar_ul {width:96px; line-height:14px;}
+.calendar_ul li  {width:96px; list-style:none; text-align:left; font-weight:bold;}
+
+.calendar_div2 { width:96px; margin-top:2px; padding-left:1px; *zoom: 1;}
+.calendar_div2:after { display: block; clear: both; content: "";}
+.calendar_div2 p {float:left;}
+.calendar_div2_p1 {}
+.calendar_div2_p2 { width:76px; padding:2px 0 0 2px; line-height:14px; text-overflow: clip; white-space: normal; word-break: break-all;}
+
+
+
+/* 상단 텍스트 색상 */
+.booking_text1 {color:#3f6f9a;}
+.booking_text2 {color:#577426;}
+.booking_text3 {color:#b46a36;}
+.booking_text4 {color:#be383d;}
+.booking_text5 {color:#bf1b81;}
+
+/* 예약확인/취소 팝업 */
+#dgcWrap #layer_pop {width:135px; background:#f5f5f5; position:absolute; top:30px; left:549px; border:1px solid #b2b2b2; padding:5px; display:none;}
+#dgcWrap #layer_pop dt {padding:5px 0; font-weight:bold;}
+#dgcWrap #layer_pop .pop_input {width:36px;}
+#dgcWrap #layer_pop .layer_pop02 {font-weight:bold; display:block; text-align:center; background:#ff7200; padding:5px 0; color:#fff; border:1px solid #fff;}
+#dgcWrap #layer_pop .layer_btn { text-align:center; margin:10px 0 3px 0;}
+
+
+/*  booking */
+#dgcWrap .title_box {background:#ededed; line-height:18px; padding:10px 5px; border:1px solid #e0e0e0; margin-bottom:30px;}
+#dgcWrap .title_box .bank_con {margin:0 0 0 15px; color:#004ea6;}
+#dgcWrap .title_box il {vertical-align:middle;}
+#dgcWrap .reservations {width:100%; background:#fff;}
+#dgcWrap .reservations td {padding:7px 5px; border:1px solid #e0e0e0; font-size:11px;}
+#dgcWrap .reservations td.reservations_name {text-align:center; background:#ededed;}
+#dgcWrap .reservations input {margin-left:5px; width:162px;}
+#dgcWrap .reservations .inputBox {width:67%;} 
+#dgcWrap .reservations .heightBox {padding:15px; font-size:14px; text-align:right; font-family:  "굴림", Gulim, "돋움", Dotum; font-weight:bold; color:#555;}
+#dgcWrap .reservations textarea {padding:3px; font-family:Malgun Gothic, dotum, tahoma, Georgia; color:#666666; font-size:11px; border:1px solid #dadada; line-height:16px; height:110px;}
+#dgcWrap .btnRight {text-align:right; padding:15px 0;} 
+
+
+
+/* reservation */
+#dgcWrap .title_01 {background: url('../images/point02.gif') no-repeat 0 5px; clear:both; font-family:  "굴림", Gulim, "돋움", Dotum; font-size:13px; 
+					        font-weight:bold; color:#4d4d4d; padding:2px 0 10px 13px; margin-top:20px;}
+.text_box {background-color:#ededed; border:1px solid #d3d3d3; padding:15px 10px; margin-bottom:15px;}
+		.text_box dt {margin-bottom:10px; font-size:13px; color:#545454;}
+		.text_box dd {line-height:1.36; color:#545454;}
+
+.information_01 {position:absolute; top:35px; left:0; width:680px; height:100px; overflow:auto; text-align:left; display:none;}
+.information_02 {position:absolute; top:35px; left:0; width:680px; height:100px; overflow:auto; text-align:left; display:none;}
+.information_03 {position:absolute; top:35px; left:0; width:680px; height:100px; overflow:auto; text-align:left; }
+
+.agree {margin-top:145px; color:#606060;}
+.agree input {border:none; width:13px; height:13px; vertical-align:middle;}
+.agree label {padding-top:3px; line-height:1.4;}
+
+.rooms {width:100%; border-collapse: collapse; background:#fff;}
+.rooms .roomRates {font-weight:bold; color:red;}
+.rooms .select_05 {width:60px;}
+.rooms th {border:1px solid #e0e0e0; background:url('../images/bar_bg02.gif') repeat-x left top; padding:8px 0; font-weight:bold;}
+.rooms td {text-align:center; border:1px solid #dedede; padding:5px 0;}
+.rooms td input.none {border:none; width:13px; height:13px; vertical-align:middle;}
+.rooms .rooms_cost {margin-top:3px;}
+.hr {border:1px dashed #dedede; width:100%; display:block; margin:30px 0;}
+
+.amount {width:100%; margin-top:20px; line-height:3.0; background-color:#ededed; overflow:hidden; border:1px solid #dedede;}
+.amount .text_01 {text-align:left; float:left; margin-left:10px; font-size:12px;}
+.amount .text_01 b {color:#555; letter-spacing:-1px;}
+.amount .text_02 {text-align:right; font-weight:bold; color:red; float:right; margin-right:10px; font-size:12px;}
+
+#dgcWrap .room_01 {width:100%; line-height:16px; border-left:1px solid #dedede; border-top:1px solid #dedede; border:1px solid #e0e0e0;}
+#dgcWrap .room_01 th {background:#ededed; padding:8px 0; font-weight:bold; border:none; text-align:center;}
+#dgcWrap .room_01 td {background:#ededed; padding:8px 0; border:none;}
+#dgcWrap .room_01 span {font-size:11px; margin-left:5px; color:red;}
+#dgcWrap .room_01 input {width:30%;}
+#dgcWrap .room_01 input.num {width:22%;}
+#dgcWrap .room_01 .select_05 {width:85%;}
+#dgcWrap .room_01 .textarea {width:95%; font-size:12px; text-align:left;}
+.btnReservations {text-align:right; margin:20px 0;}
+.btnReservations li {display:inline; margin-left:5px; }
+.btnReservations li #dgcWrap .button black {color:#fff; border:1px solid red;}
+
+/* 객실요금 팝업 */
+.rates {width:250px; position:absolute; top:500px; left:120px; border:1px solid #c1c1c1; background-color:#ededed;
+			padding:10px; clear:both;}
+.rates dt {background: url(../images/arrow_btn02.gif) no-repeat 0 3px; padding:0 0 8px 10px; border-bottom:1px solid #383838;
+				 text-align:left; font-weight:bold;}
+.rates dd {padding:5px; width:100%;}
+.rates dd ul {width:95%; margin-bottom:2px; padding:6px 0 2px 0; border-bottom:1px dotted #adadad; *zoom: 1;}
+.rates dd ul:after { display: block; clear: both; content: "";}
+.rates dd ul li.rooms_cost_li1 {text-align:left; float:left; letter-spacing:-1px;}
+.rates dd ul li.rooms_cost_li2 {text-align:right; float:right;}
+.rates .btnClose {position:absolute; top:0; left:198px;}
+
+
+/* 예약안내설정 */
+.tx-editor-container {margin-top:10px;}
+.guideType {width:100%; text-align:right;}
+.option_info {color:#ff6000; font-size:11px;}
+
+/* 객실 순서변경 */
+.top_arrow_con { font-size: 10px; color: #e85c2c; }
+.down_arrow_con { font-size: 10px; color: #2c96e8; }
+
+.sm_btn, .top_sm_btn, .down_sm_btn {
+border: 1px solid #dadada;
+background: #fff !important;
+padding: 4px 7px 4px;
+border-radius: 2px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+cursor: pointer;
+white-space: nowrap;
+vertical-align: middle;
+background-image: linear-gradient(to bottom, #ffffff, #f5f5f5) !important;
+background-repeat: repeat-x;
+}
+
+/******************* ui end *********************/
+
+/* 검색 */
+.btn_check {width:100%; text-align:right; clear:both; margin:20px 0; }
+
+.btn_check ul {border:0px solid red; margin-top:10px;}
+.btn_check ul li {display:inline; border:0px solid red; padding:0; margin:0; height:30px; }
+.btn_check_left {width:100%; text-align:left;}
+.btn_check_left ul {border:0px solid red; margin-top:10px;}
+.btn_check_left ul li {display:inline; border:0px solid red; padding:0; margin:0; height:30px; }
+
+.gu_input03 {
+	width:100px;
+	height:20px;
+	font-family:돋움,Arial;
+	font-size:10pt;
+	color:#6c6c6c;
+	line-height:140%;
+	font-stretch: normal;
+	background:#f1f7e7;
+	border:1px solid #dedede;
+}
